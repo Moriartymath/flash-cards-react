@@ -1,0 +1,15 @@
+.list--item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  width: 31%;
+  height: 20em;
+  text-align: center;
+  padding: 1em 3em;
+  transition: 1s all ease-in-out;
+}
+
+.list--item.opened {
+  transform: rotateY(180deg);
+}

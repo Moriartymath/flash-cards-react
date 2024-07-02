@@ -1,0 +1,7 @@
+.flash-card--list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 2em;
+  row-gap: 2em;
+}
