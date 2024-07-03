@@ -12,7 +12,7 @@ type FlashCardListProps = {
 };
 
 function FlashCardList({ questions }: FlashCardListProps) {
-  const [currentCard, setCurrentCard] = useState(null);
+  const [currentCardId, setCurrentCardId] = useState(-1);
 
   return (
     <ul className="flash-card--list">
@@ -21,7 +21,9 @@ function FlashCardList({ questions }: FlashCardListProps) {
           question={question}
           answer={answer}
           key={id}
-          setCurrentCard={setCurrentCard}
+          id={id}
+          currentCardId={currentCardId}
+          setCurrentCardId={setCurrentCardId}
         />
       ))}
     </ul>
